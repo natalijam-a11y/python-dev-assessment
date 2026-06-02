@@ -40,3 +40,5 @@ print(f"Average of data3: {calculate_average(data3)}")
 3.1. Basic API Interaction
 fetch_and_display_users(4)
 fetch_and_display_users(16)
+
+This repository is for my developer assessment tasks.
