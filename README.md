@@ -13,9 +13,8 @@ I developed each task on its own dedicated branch and successfully merged everyt
 * `debug_errors.py` – Error handling and debugging. Resolved logical bugs (like division by zero) using `try-except` blocks and verified the flow using the VS Code debugger.
 * `api_client.py` – API integration. Used the `requests` library to fetch live data from the JSONPlaceholder API, implementing thorough network exception handling and safe nested data parsing.
 
+What I found most challenging: In the API task, the trickiest part was safely extracting the city from the user data. Since the address is a nested dictionary (a dict inside a dict), I had to make sure the code wouldn't crash if a specific key was missing. I resolved this by utilizing chained .get() methods.
 
-3.1. Basic API Interaction
-fetch_and_display_users(4)
-fetch_and_display_users(16)
+What I found most interesting: Definitely working with the VS Code Debugger! It felt awesome to set a breakpoint, freeze the program mid-execution, and literally watch the line skip a potential crash and jump straight into my except recovery block. It felt like having time-control over my code.
 
-This repository is for my developer assessment tasks.
+One thing I learned/improved upon: I really leveled up my understanding of how Python evaluates data types under the hood. For instance, it was an eye-opener when I passed a string instead of a list into my function, and Python threw an IndexError instead of a TypeError. I learned that Python treats strings similarly to lists of characters!
